@@ -1,0 +1,14 @@
+---
+# Brakeman configuration
+:min_confidence: 2
+:ignore_model_output: false
+:skip_files:
+  - spec/**/*
+:output_files:
+  - tmp/brakeman.json
+:output_formats:
+  - json
+  - html
+:parallel_checks: true
+:quiet: true
+:run_all_checks: true
